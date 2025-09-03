@@ -134,6 +134,13 @@ WHERE up.user_data ? 'skills';
 - Understand how to join tables using arrays for real-world scenarios.
 - Build a foundation for advanced SQL skills, helpful for data analytics, BI, and backend development.
 
+---
+## 📬 Contact
+Author: Ariful Islam
+Email: arifkhan.nsd14@gmail.com
+
+
+
 
 
 
