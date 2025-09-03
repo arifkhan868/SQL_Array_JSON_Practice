@@ -1,0 +1,8 @@
+id,user_data
+2,"{\"age\": 22, \"name\": \"Ariful\", \"skill\": [\"SQL\", \"Power Point\", \"Bangla\", \"Word\"]}"
+3,"{\"age\": 27, \"skills\": [\"English\", \"Biology \", \"Python\", \"Pandas\"], \"fullname\": \"Jannatul Jerin\"}"
+4,"{\"age\": 23, \"name\": \"Monir\", \"skill\": [\"Nampy\", \"Matplotive\", \"Excel\", \"Word\"]}"
+5,"{\"age\": 32, \"skills\": [\"Photoshop\", \"Illustrator\", \"Canva\", \"ChatGPT\"], \"fullname\": \"Ariful Islam\"}"
+6,"{\"age\": 30, \"skill\": [\"PostgreSQL\", \"Database\", \"Python\", \"Outlook\"], \"finalname\": \"MD Rasel Miah\"}"
+7,"{\"age\": 26, \"skills\": [\"My SQL\", \"SQL Server\", \"R\", \"Word\"], \"finalname\": \"MD Jahid Hasan\"}"
+1,"{\"age\": 25, \"name\": \"Shohel\", \"skill\": [\"SQL\", \"Power BI\", \"Python\", \"Word\"]}"

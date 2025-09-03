@@ -1,0 +1,5 @@
+id,student_name,subject_name,numbers,teacher
+2,Jannatul Jerin,Math,"{83,76,93}","{7,8}"
+4,Jahid Hasan,Bangla,"{92,85,80}","{9,10}"
+3,Monir Hasan,Biology,"{96,NULL,86}","{11,12}"
+1,Ariful Islam,English,"{94,82,89}","{9,11,12}"
