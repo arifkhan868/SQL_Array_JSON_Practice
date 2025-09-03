@@ -125,6 +125,14 @@ SELECT up.user_data->'skills'->>0
 FROM master.profile up
 WHERE up.user_data ? 'skills';
 ```
+---
+## 💡 Learning Outcomes
+
+- By practicing with this repository, you will:
+- vGain confidence using ARRAY columns and querying individual elements.
+- Learn to manipulate JSON/JSONB data efficiently in PostgreSQL.
+- Understand how to join tables using arrays for real-world scenarios.
+- Build a foundation for advanced SQL skills, helpful for data analytics, BI, and backend development.
 
 
 
