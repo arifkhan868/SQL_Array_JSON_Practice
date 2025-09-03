@@ -90,7 +90,41 @@ SELECT up.user_data->'skills'->>0 AS Skill
 FROM master.profile up
 WHERE up.user_data ? 'skills';
 ```
+### JSON & JSONB Handling – master.profile
+```sql
+-- Insert sample profiles
+INSERT INTO master.profile (user_data)
+VALUES 
+('{"name": "Ariful", "age": 22, "skill": ["SQL","Power Point","Word"]}'),
+('{"fullname": "Jannatul Jerin", "age": 27, "skills": ["English","Biology","Python","Pandas"]}');
 
+-- Extract names from multiple possible keys
+SELECT up.user_data->>'name' AS Name
+FROM master.profile up
+WHERE up.user_data->>'name' IS NOT NULL
+UNION ALL
+SELECT up.user_data->>'fullname' AS Name
+FROM master.profile up
+WHERE up.user_data->>'fullname' IS NOT NULL;
+
+-- Extract ages
+SELECT up.user_data->'age' AS Age
+FROM master.profile up
+WHERE up.user_data ? 'age';
+
+-- Extract all skills individually from JSON arrays
+SELECT up.user_data->'skill'->>0 AS Skill
+FROM master.profile up
+WHERE up.user_data ? 'skill'
+UNION ALL
+SELECT up.user_data->'skill'->>1
+FROM master.profile up
+WHERE up.user_data ? 'skill'
+UNION ALL
+SELECT up.user_data->'skills'->>0
+FROM master.profile up
+WHERE up.user_data ? 'skills';
+```
 
 
 
