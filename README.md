@@ -8,11 +8,11 @@
 ---
 
 ## 🚀 Overview
-Welcome to my SQL practice repository!  
+Welcome to my little SQL playground!
 
-Here, I explore **complex data types** like arrays and JSON in PostgreSQL. These exercises helped me understand how to store, query, and manipulate structured and semi-structured data in a way that mirrors real-world applications.  
+Here, I like to tinker with arrays and JSON in PostgreSQL. Through these exercises, I got a better feel for how to store, query, and manage structured as well as semi-structured data — kind of like how it’s done in real-world projects.
 
-Whether you’re a fellow learner or just curious about SQL, this repo is for anyone who wants to level up their database skills.  
+If you’re learning SQL or just curious about databases, I hope this repo helps you explore and level up your skills, just like it helped me.
 
 ---
 
