@@ -34,8 +34,15 @@ FROM master.students;
 -- Update array elements
 UPDATE master.students
 SET numbers[2] = 85
-WHERE student_name = 'Jahid Hasan';```
-
+WHERE student_name = 'Jahid Hasan'; ```
+---
+### 2️⃣ JSON & JSONB Handling
+- **Tables:** `master`.`profile`
+- **Focus Areas:**
+-  Storing user profiles in JSONB
+-  Extracting data from JSON arrays and nested objects
+-  Handling multiple possible keys (name, fullname, finalname)
+-  Example Queries:
 
 
 
