@@ -43,7 +43,23 @@ WHERE student_name = 'Jahid Hasan';
 -  Storing user profiles in JSONB
 -  Extracting data from JSON arrays and nested objects
 -  Handling multiple possible keys (name, fullname, finalname)
--  Example Queries:
+-  **Example Queries:**
+
+```sql
+-- Extract names from JSON
+SELECT up.user_data->>'name' AS Name
+FROM master.profile up
+WHERE up.user_data->>'name' IS NOT NULL
+UNION ALL
+SELECT up.user_data->>'fullname'
+FROM master.profile up
+WHERE up.user_data->>'fullname' IS NOT NULL;
+
+-- Extract first skill from JSON array
+SELECT up.user_data->'skills'->>0 AS Skill
+FROM master.profile up
+WHERE up.user_data ? 'skills';
+```
 
 
 
