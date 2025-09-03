@@ -37,7 +37,37 @@ SET numbers[2] = 85
 WHERE student_name = 'Jahid Hasan';
  ```
 ---
-### 2️⃣ JSON & JSONB Handling
+### 2️⃣ ARRAY Relationships – master.section
+```sql
+-- Create sections with enrolled students as arrays
+CREATE TABLE master.section (
+    id SERIAL,
+    section_name VARCHAR,
+    enrolled_student INT[]
+);
+
+-- Join students with sections using array operators
+SELECT st.student_name, sc.section_name
+FROM master.students st
+JOIN master.section sc
+ON ARRAY[st.id] <@ sc.enrolled_student;
+
+-- Add teachers as arrays
+ALTER TABLE master.section
+ADD teacher INT[];
+
+ALTER TABLE master.students
+ADD teacher INT[];
+
+-- Join students and sections using teacher arrays
+SELECT st.student_name, sc.section_name, sc.teacher AS sc_teacher, st.teacher AS st_teacher
+FROM master.students st
+JOIN master.section sc
+ON st.teacher && sc.teacher;
+```
+
+---
+### 3️⃣ JSON & JSONB Handling
 - **Tables:** `master`.`profile`
 - **Focus Areas:**
 -  Storing user profiles in JSONB
