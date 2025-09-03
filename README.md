@@ -36,16 +36,6 @@ UPDATE master.students
 SET numbers[2] = 85
 WHERE student_name = 'Jahid Hasan';
 
----
-### 2️⃣ JSON / JSONB Handling
-
-- **Tables:** 'master'.'profile'
-- **Focus Areas:**
--  Storing JSON/JSONB data in PostgreSQL
--  Inserting different JSON structures
--  Querying nested JSON fields
--  Extracting array elements from JSON
--  Handling optional keys dynamically
 
 
 
