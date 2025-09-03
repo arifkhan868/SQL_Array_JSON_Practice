@@ -37,12 +37,12 @@ SET numbers[2] = 85
 WHERE student_name = 'Jahid Hasan';
 
 ---
-### 3️⃣ JSON & JSONB Handling
+```### 3️⃣ JSON & JSONB Handling
 - **Tables:**  `master`.`profile`
 - **Focus Areas:**
 -  Storing user profiles in JSONB
 -  Extracting data from JSON arrays and nested objects
--  Handling multiple possible keys (name, fullname, finalname)
+-  Handling multiple possible keys (name, fullname, finalname)```
 
 
 
